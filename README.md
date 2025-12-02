@@ -1,8 +1,72 @@
-# React + Vite
+# Meme Generator (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React app built with Vite that lets you generate memes by selecting images and adding custom text.
 
-Currently, two official plugins are available:
+Live demo: https://meme-generator-react1.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Pick from a list of meme images
+- Add top and bottom text and position them on the image
+- Download the generated meme image
+- Built with React + TypeScript and Vite for fast development
+
+## Quick Start
+
+Prerequisites:
+
+- Node.js (16+ recommended)
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+Open http://localhost:5173 in your browser.
+
+Build for production:
+
+```
+npm run build
+```
+
+Preview the production build locally:
+
+```
+npm run preview
+```
+
+## Deployment
+
+This project is deployed on Netlify:
+
+https://meme-generator-react1.netlify.app/
+
+If you redeploy, you can connect your GitHub repo to Netlify or upload the contents of the `dist` folder after running `npm run build`.
+
+## Project Structure
+
+- `index.html` - App entry HTML
+- `src/` - React source files
+	- `main.tsx` - App bootstrap
+	- `App.tsx` - Main app component
+	- `components/` - Reusable components (Header, Meme, etc.)
+
+## Scripts
+
+- `npm run dev` — start dev server
+- `npm run build` — build for production
+- `npm run preview` — locally preview the production build
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
